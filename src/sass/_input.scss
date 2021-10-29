@@ -1,0 +1,102 @@
+@import "./base";
+
+.Input {  
+  .link__creator-div {
+    background: linear-gradient(to top, $Gray 50%, #ffff 50%);
+    width: 100%;
+    padding: 0 4em;
+    .link__creator {
+      display: flex;
+      align-items: center;
+      background-color: $Dark-Violet;
+      background-image: url("../assets/backgrounds/bg-shorten-desktop.svg");
+      background-size: cover;
+      justify-content: center;      
+      padding: 2em;
+      border-radius: 10px;
+      input {
+        font-size: 18px;
+        padding: 1em;
+        width: 100%;
+        max-width: 1500px;
+        margin: 2em 1em;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        font-size: 18px;
+        margin: 0 1em;
+        padding: 1em;
+        width: 25%;
+        border-radius: 5px;
+        border: none;
+        background-color: $Cyan;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .link__row-div {
+    padding: 0 4em;
+    background: $Gray;
+  }
+  .link__row {
+    @include Link__row;
+    // display: none;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .Input {
+    // padding: 0 2em;
+    .link__creator-div {
+      padding: 0 2em;
+      .link__creator {
+        background-image: url("../assets/backgrounds/bg-shorten-mobile.svg");
+        background-size: cover;
+        flex-direction: column;
+        padding: 1em;
+        input {
+          margin: 0;
+          margin-bottom: 2em;
+        }
+        .link__creator-button {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    .link__row-div {
+      padding: 0 2em;
+      .link__row {
+        flex-direction: column;
+        // padding: 0 1em;
+        .left-side {
+          text-align: left;
+          width: 100%;
+          border-bottom: 1px $Gray solid;
+          p {
+            width: 100%;
+            margin: 1em 0;
+          }
+        }
+        .right-side {
+          width: 100%;
+          p {
+            text-align: left;
+            margin: 1em 0;
+          }
+          .link__button {
+            width: 100%;
+            margin-bottom: 1em;
+          }
+          .link__button-clicked {
+            width: 100%;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}

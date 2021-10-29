@@ -1,0 +1,35 @@
+@import "./base";
+
+.CTA {
+  background-color: $Dark-Violet;
+  background-image: url(../assets/backgrounds/bg-boost-desktop.svg);
+  background-size: cover;
+  color: white;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4em;
+  .cta__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    @include Hero__button;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .CTA {
+    padding: 0 2em;
+    height: 300px;
+    background-image: url(../assets/backgrounds/bg-boost-mobile.svg);
+    .cta__info {
+      button {
+        width: 200px;
+        font-weight: 600;
+      }
+    }
+  }
+}

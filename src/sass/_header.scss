@@ -1,0 +1,112 @@
+@import "./base";
+
+.Header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2em 4em;
+  background: white;
+  .Nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .Nav__hamburger {
+      display: none;
+    }
+    .Nav__menus {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .Nav__links {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 1em;
+        align-items: center;
+        li {
+          padding: 0 1em;
+          color: $Grayish-Violet;
+          cursor: pointer;
+          display: flex;
+          margin: 0 auto;
+          &:hover {
+            color: black;
+          }
+        }
+        .links-list-2 {
+          display: flex;
+          align-items: center;
+        }
+        .Nav__button {
+          background-color: $Cyan;
+          color: white;
+          padding: 0.5em;
+          border-radius: 50px;
+          border: none;
+          width: 100px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .Header {
+    padding: 2em;
+    .Nav {
+      position: relative;
+      justify-content: space-between;
+      .Nav__logo {
+        margin-right: auto;
+        padding: 2em 0;
+      }
+      .Nav__hamburger {
+        display: block;
+        cursor: pointer;
+      }
+      .Nav__menus {
+        position: absolute;
+        transform: translateY(275px);
+        width: 100%;
+        flex-direction: column;
+        background-color: $Dark-Violet;
+        border-radius: 10px;
+        padding: 1em;
+        .Nav__links {
+          flex-direction: column;
+          width: 100%;
+          font-weight: 600;
+          li {
+            padding: 1em 0;
+            color: white;
+
+            &:hover {
+              color: white;
+            }
+            .Nav__button {
+              font-weight: 600;
+              font-size: 18px;
+              width: 100%;
+            }
+          }
+        }
+        .links-list-2 {
+          margin: 0 auto;
+          padding: 1em;
+          li {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+        .links-list-1 {
+          margin: 0 auto;
+          padding: 1em;
+          border-bottom: 1px grey solid;
+        }
+      }
+    }
+  }
+}

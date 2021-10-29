@@ -1,0 +1,73 @@
+@import "./base";
+
+.Benefits {
+  background: $Gray;
+  height: 700px;
+  z-index: -2;
+  position: relative;
+  padding-bottom: 8em;
+  padding: 0 4em;
+  .benefits__text {
+    padding: 2em 0;
+    p {
+      margin: 0 auto;
+      color: $Grayish-Violet;
+      width: 500px;
+    }
+  }
+  .benefits__boxes {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    .benefits__box {
+      @include Benefits__box;
+      height: 250px;
+      .benefits__box-info {
+        transform: translateY(-50px);
+      }
+    }
+    .box-2 {
+      transform: translateY(50px) translateX(5px);
+    }
+    .box-3 {
+      transform: translateY(100px);
+    }
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .Benefits {
+    height: auto;
+    padding: 0 2em;    
+    .benefits__text {
+      align-items: center;
+      padding: 4em 0;
+      p {
+        width: 100%;
+      }
+    }
+    .benefits__boxes {
+      flex-direction: column;
+      height: auto;
+      position: relative;
+      .benefits__box {
+        text-align: center;
+        margin: 3em auto;
+        width: 100%;
+        height: auto;
+        transform: unset;
+        .benefits__box-info {
+          text-align: center;
+          p {
+            color: $Grayish-Violet;
+          }
+        }
+        .benefits__img-background {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

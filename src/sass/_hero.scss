@@ -1,0 +1,42 @@
+@import "./base";
+
+.Hero {
+  display: flex;
+  padding: 0 4em;
+  background: white;
+  justify-content: space-between;
+  .Hero__info {
+    text-align: left;
+    p {
+      color: $Grayish-Violet;
+    }
+  }
+  .Hero__img {
+    transform: translateX(200px);
+  }
+  .Hero__button {
+    @include Hero__button;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .Hero {
+    padding: 0 2em;
+    flex-direction: column;
+    align-items: center;
+    .Hero__info {
+      width: 65%;
+      text-align: center;
+      order: 1;
+      margin-bottom: 5em;
+    }
+    .Hero__img {
+      transform: unset;
+      width: 45%;
+    }
+    .Hero__button {
+      width: 200px;
+      font-weight: 600;
+    }
+  }
+}
