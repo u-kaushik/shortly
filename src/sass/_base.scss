@@ -7,6 +7,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+* {
+}
+
 /*COLORS*/
 $Cyan: hsl(180, 66%, 49%);
 $Dark-Violet: hsl(257, 27%, 26%);
@@ -140,17 +143,14 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
   display: flex;
 }
 
-// @media screen and (max-width: 1530px) {
-//   body {
-//     text-align: center;
-//     margin: 0 auto;
-//     align-items: center;
-//   }
-// }
+@media screen and (max-width: 1530px) {
+  body {
+    overflow-x: hidden;
+  }
+}

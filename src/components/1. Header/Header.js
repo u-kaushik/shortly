@@ -4,7 +4,7 @@ import Logo from "../../assets/icons/logo.svg";
 import Hamburger from "../../assets/icons/hamburger-menu.svg";
 
 function Header() {
-  const [showMenu, toggleMenu] = useState(false);
+  const [showMenu, toggleMenu] = useState(true);
 
   let menu;
 
@@ -25,10 +25,6 @@ function Header() {
       </div>
     );
   }
-
-  // setShowMenu() {
-  //   showMenu ? return
-  // }
 
   return (
     <div className="Header">

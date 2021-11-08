@@ -24,6 +24,7 @@
         list-style: none;
         padding: 0 1em;
         align-items: center;
+
         li {
           padding: 0 1em;
           color: $Grayish-Violet;
@@ -55,7 +56,7 @@
 
 @media screen and (max-width: 1530px) {
   .Header {
-    padding: 2em;
+    padding: 0 2em;
     .Nav {
       position: relative;
       justify-content: space-between;

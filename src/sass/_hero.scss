@@ -10,13 +10,7 @@
     p {
       color: $Grayish-Violet;
     }
-  }
-  .Hero__img {
-    // img {
-    //   transform: translateX(-50px);
-    //   width: 100%;
-    // }
-  }
+  }  
   .Hero__button {
     @include Hero__button;
   }
