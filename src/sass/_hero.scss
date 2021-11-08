@@ -12,7 +12,10 @@
     }
   }
   .Hero__img {
-    transform: translateX(200px);
+    // img {
+    //   transform: translateX(-50px);
+    //   width: 100%;
+    // }
   }
   .Hero__button {
     @include Hero__button;
@@ -32,7 +35,7 @@
     }
     .Hero__img {
       transform: unset;
-      width: 45%;
+      width: 75%;
     }
     .Hero__button {
       width: 200px;
