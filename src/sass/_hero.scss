@@ -27,10 +27,12 @@
       order: 1;
       margin-bottom: 5em;
     }
-    // .Hero__img {
-    //   transform: unset;
-    //   width: 75%;
-    // }
+    .Hero__img {
+      img {
+        transform: unset;
+        width: 100%;
+      }
+    }
     .Hero__button {
       width: 200px;
       font-weight: 600;
